@@ -9,15 +9,46 @@
     <!-- <form> => Faz uma estrutura base de um forumário HTML -->
     <!-- <input type="text" => Define um campo no formulário -->
     <!-- <button> => Botão -->
+    <!-- <multiple> => É igual a true -->
     <h1>Formulários</h1>
 
     <form>
         Nome:
-        <input type="text"> <br>
+        <input type="text" name="nome"> <br>
         E-mail:
-        <input type="text"> <br>
+        <input type="email" name="email"> <br>
+        Data de Nascimento
+        <input type="date" name="nascimento"> <br>
+        Idade:
+        <input type="number" name="idade"> <br>
+        Telefone:
+        <input type="tel" name="telefone"> <br>
+        URL da foto:
+        <input type="url" name="foto"> <br>
+        Frente do RG:
+        <input type="file" accept="jng, .jpg" multiple name="rg"> <br>
+        Escolha sua cor favorita:
+        <input type="color" name="cor"> <br>
         Senha:
-        <input type="text"> <br>
+        <input type="password" name="senha"> <br>
+        Estado Civil: <br>
+        Solteiro: <input type="radio" name="estado-civil" value="Solteiro">
+        Casado: <input type="radio" name="estado-civil" value="Casado">
+        Divorciado: <input type="radio" name="estado-civil"><br>
+        Nivel de Inglês: 1 <input type="range" name="ingles" min="1" max="5" step="0.5">5<br>
+        <select name="estado">
+            <option disabled selected>Selecione um Estado</option>
+            <option>São Paulo</option>
+            <option>Minas Gerais</option>
+            <option>Curitiba</option>
+            <option>Bahia</option>
+        </select> 
+        <br>
+        Conclusão: <br>
+        <textarea placeholder="Digite seu texto"></textarea>
+        <br>
+        Aceito os termos de uso:
+        <input type="checkbox"> <br>
         <button>Enviar</button>
     </form>
 </body>
