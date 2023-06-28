@@ -9,34 +9,52 @@
 
     <h1>Cadastre-se</h1>
 
+    <hr>
+
     <form>
 
         Nome completo: <br>
-        <input type="text" name="Nome"> <br>
+        <input type="text" name="Nome" maxlength="200" placeholder="Digite seu nome"> <br>
+        
+        <br>
 
         E-mail: <br>
-        <input type="text" name="email"> <br>
+        <input type="email" name="Email" placeholder="Digite seu email exemplo@hotmail.com"> <br>
+
+        <br>
 
         Senha: <br>
-        <input type="text" name="senha"> <br>
+        <input type="password" name="senha" minlength="8" placeholder="Digite sua senha"> <br>
+
+        <br>
 
         UF: <br>
-        <input type="text" name="uf"> <br>
+        <input type="text" name="uf" maxlength="2" placeholder="Digite seu UF"> <br>
+
+        <br>
 
         Cidade: <br>
-        <input type="text" name="cidade"> <br>
+        <input type="text" name="cidade" placeholder="Digite sua cidade"> <br>
+
+        <br>
 
         Rua: <br>
-        <input type="text" name="rua"> <br>
+        <input type="text" name="rua" placeholder="Digite sua rua"> <br>
+
+        <br>
 
         Número: <br>
-        <input type="text" name="numero"> <br>
+        <input type="number" name="numero" placeholder="Digite o número, complemento, etc"> <br>
+
+        <br>
 
         CEP: <br>
-        <input type="text" name="cep"> <br>
+        <input type="text" name="cep" minlength="8" placeholder="Digite seu CEP"> <br>
+
+        <br>
 
         Bio: <br>
-        <input type="text" name="biografia"> 
+        <textarea placeholder="Digite seu texto"></textarea> 
         
         <br>
         <br>
@@ -58,7 +76,7 @@
         <br>
         <br>
 
-        <button type="reset">Limpar</button>
+        <button type="reset">Limpar</button> 
     </form>
 </body>
 </html>
