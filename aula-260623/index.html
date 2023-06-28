@@ -10,46 +10,66 @@
     <!-- <input type="text" => Define um campo no formulário -->
     <!-- <button> => Botão -->
     <!-- <multiple> => É igual a true -->
+
+    <!-- 
+        button -> Botão comum (auxlia na execução de um evento javascript)
+        submit -> Submete as informações do formulário
+        reset -> Limpar os campos de um formulário
+    -->
+
+    <!-- 
+        placeholder -> Define um texto explicativo para o campo
+        name -> Indica uma identificação para a informação no envio do formulário
+        value -> Indica o valor do campo
+        disabled -> Habilita/Desabilita um campo
+        min -> Define um numero minimo para campos numericos
+        max -> Define um numero máximo para campos numericos
+        minLength -> Minimo de caracteres
+        maxLength -> Maximo de caracteres
+        pattern -> Define um padrão/modelo da informação
+        required -> Define um campo obrigatório
+    -->
+    
     <h1>Formulários</h1>
 
     <form>
-        Nome:
+        Nome:<!-- type="text" define um campo para entrada de texto -->
         <input type="text" name="nome" maxlength="10" placeholder="Digite seu nome"> 
         <br>
 
-        E-mail:
+        E-mail:<!-- type="email" define um campo para entrada de email -->
         <input type="email" name="email" placeholder="exemplo@gmail.com"> 
         <br>
 
-        Data de Nascimento
-        <input type="date" name="nascimento" min="2023-06-26" max="2023-07-26"> 
-        <br>
-
-        Idade:
-        <input type="number" name="idade" min="0" max="150"> 
-        <br>
-
-        Telefone:
-        <input type="tel" name="telefone"> 
-        <br>
-
-        URL da foto:
-        <input type="url" name="foto"> 
-        <br>
-
-        Frente do RG:
-        <input type="file" accept="jng, .jpg" multiple name="rg"> 
-        <br>
-
-        Escolha sua cor favorita:
-        <input type="color" name="cor" value="#FF00FF"> 
-        <br>
-
-        Senha:
+        Senha:<!-- type="password" define um campo para entrada de senha -->
         <input type="password" name="senha" minlength="8">  
         <br>
 
-        Estado Civil: 
+        Data de Nascimento<!-- type="date" define um campo para entrada de data -->
+        <input type="date" name="nascimento" min="2023-06-26" max="2023-07-26"> 
+        <br>
+
+        Idade:<!-- type="number" define um campo para entrada valores numericos -->
+        <input type="number" name="idade" min="0" max="150"> 
+        <br>
+
+        Telefone:<!-- type="tel" define um campo para entrada de telefone -->
+        <input type="tel" name="telefone"> 
+        <br>
+
+        URL da foto:<!-- type="url" define um campo para entrada de endereços de internet (url) -->
+        <input type="url" name="foto"> 
+        <br>
+
+        Frente do RG:<!-- type="file" define um campo para entrada de arquivos -->
+        <input type="file" accept="jng, .jpg" multiple name="rg"> 
+        <br>
+
+        Escolha sua cor favorita:<!-- type="color" define um campo para entrada de valor hexadeciamal de uma cor -->
+        <input type="color" name="cor" value="#FF00FF"> 
+        <br>
+
+        Estado Civil: <!-- type="radio" define um campo de opção -->
         <br>
 
         Solteiro: <input type="radio" name="estado-civil" value="Solteiro">
@@ -62,7 +82,7 @@
         Nivel de Inglês: 1 <input type="range" name="ingles" min="1" max="5" step="0.5">5
         <br>
         
-        <select name="estado">
+        <select name="estado"> <!-- <select> define um campo de seleção -->
             <option disabled selected>Selecione um Estado</option>
             <option value="SP">São Paulo</option>
             <option value="MG">Minas Gerais</option>
@@ -71,12 +91,12 @@
         </select> 
         <br>
 
-        Conclusão: 
+        Conclusão: <!-- <textarea> define um campo para entrada texto longo -->
         <br>
         <textarea cols="30" rows="3" placeholder="Digite seu texto"></textarea>
         <br>
 
-        Aceito os termos de uso:
+        Aceito os termos de uso:<!-- type="checkbox" define uma campo marcável -->
         <input type="checkbox"> 
         <br>
         <button type="button">Não faz nada</button>
