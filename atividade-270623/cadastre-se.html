@@ -3,80 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atividade 27/06/2023</title>
+    <title>cadastro</title>
 </head>
 <body>
 
     <h1>Cadastre-se</h1>
 
     <hr>
+    <br>
+    
+    <form action="">
+        <fieldset>
+            <legend>Informações Pessoais</legend>
 
-    <form>
+            <label for="nome">Nome</label>
 
-        Nome completo: <br>
-        <input type="text" name="Nome" maxlength="200" placeholder="Digite seu nome"> <br>
-        
-        <br>
+            <br>
 
-        E-mail: <br>
-        <input type="email" name="Email" placeholder="Digite seu email exemplo@hotmail.com"> <br>
+            <input type="text" name="nome" maxlength="200" required>
 
-        <br>
+            <br>
 
-        Senha: <br>
-        <input type="password" name="senha" minlength="8" placeholder="Digite sua senha"> <br>
+            <label for="senha">Senha</label>
+            <br>
+            <input type="password" name="senha" id="senha" required>
 
-        <br>
+            <label for="bio">Biografia</label>
+            <br>
+            <textarea name="bio" id="bio" cols="30" rows="4"></textarea>
 
-        UF: <br>
-        <input type="text" name="uf" maxlength="2" placeholder="Digite seu UF"> <br>
+            <label for="atuacao">Área de Atuação</label>
+            <br>
+            <select name="atuacao" id="atuacao">
+                <option value="" disabled selected>Selecione</option> 
+                <option value="fullstack">FullStack</option>
+                <option value="cloud">Cloud</option>
+                <option value="fullstack, cloud">Ambos</option>
+            </select>e
+        </fieldset>
 
-        <br>
+        <fieldset>
+            <legend>Informações de Endereço</legend>
 
-        Cidade: <br>
-        <input type="text" name="cidade" placeholder="Digite sua cidade"> <br>
+            <label for="uf">UF</label>
+            <br>
+            <input type="text" name="uf" id="uf" required>
+            <br>
 
-        <br>
+            <label for="cidade">Cidade</label>
+            <br>
+            <input type="text" name="cidade" id="cidade" required>
+            <br>
 
-        Rua: <br>
-        <input type="text" name="rua" placeholder="Digite sua rua"> <br>
+            <label for="Rua/Av"></label>
+            <br>
+            <input type="text" name="rua" id="rua" required>
+            <br>
 
-        <br>
+            <label for="numero">Número</label>
+            <br>
+            <input type="text" name="numero" id="numero" required>
+            <br>
 
-        Número: <br>
-        <input type="number" name="numero" placeholder="Digite o número, complemento, etc"> <br>
+            <label for="cep">CEP</label>
+            <br>
+            <input type="text" name="cep" id="cep" required>
+            <br>
+        </fieldset>
 
-        <br>
-
-        CEP: <br>
-        <input type="text" name="cep" minlength="8" placeholder="Digite seu CEP"> <br>
-
-        <br>
-
-        Bio: <br>
-        <textarea placeholder="Digite seu texto"></textarea> 
-        
-        <br>
-        <br>
-
-        Área de atuação: <br>
-
-        <select name="atuacao">
-            <option disabled selected>Selecione</option> 
-            <option>FullStack</option>
-            <option>Cloud</option>
-            <option>Ambos</option>
-        </select>
-
-        <br> 
-        <br>
-
-        <button>Cadastrar</button> 
-        
-        <br>
-        <br>
-
-        <button type="reset">Limpar</button> 
-    </form>
+        <button>Enviar</button>
+        <button type="reset">Limpar</button>
 </body>
 </html>
