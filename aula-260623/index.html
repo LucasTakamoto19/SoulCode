@@ -14,42 +14,78 @@
 
     <form>
         Nome:
-        <input type="text" name="nome" placeholder="Digite seu nome"> <br>
+        <input type="text" name="nome" maxlength="10" placeholder="Digite seu nome"> 
+        <br>
+
         E-mail:
-        <input type="email" name="email" placeholder="Digite seu email"> <br>
+        <input type="email" name="email" placeholder="exemplo@gmail.com"> 
+        <br>
+
         Data de Nascimento
-        <input type="date" name="nascimento"> <br>
+        <input type="date" name="nascimento" min="2023-06-26" max="2023-07-26"> 
+        <br>
+
         Idade:
-        <input type="number" name="idade"> <br>
+        <input type="number" name="idade" min="0" max="150"> 
+        <br>
+
         Telefone:
-        <input type="tel" name="telefone"> <br>
+        <input type="tel" name="telefone"> 
+        <br>
+
         URL da foto:
-        <input type="url" name="foto"> <br>
+        <input type="url" name="foto"> 
+        <br>
+
         Frente do RG:
-        <input type="file" accept="jng, .jpg" multiple name="rg"> <br>
+        <input type="file" accept="jng, .jpg" multiple name="rg"> 
+        <br>
+
         Escolha sua cor favorita:
-        <input type="color" name="cor"> <br>
+        <input type="color" name="cor" value="#FF00FF"> 
+        <br>
+
         Senha:
-        <input type="password" name="senha"> <br>
-        Estado Civil: <br>
+        <input type="password" name="senha" minlength="8">  
+        <br>
+
+        Estado Civil: 
+        <br>
+
         Solteiro: <input type="radio" name="estado-civil" value="Solteiro">
+        <br>
         Casado: <input type="radio" name="estado-civil" value="Casado">
-        Divorciado: <input type="radio" name="estado-civil"><br>
-        Nivel de Inglês: 1 <input type="range" name="ingles" min="1" max="5" step="0.5">5<br>
+        <br>
+        Divorciado: <input type="radio" name="estado-civil">
+        <br>
+
+        Nivel de Inglês: 1 <input type="range" name="ingles" min="1" max="5" step="0.5">5
+        <br>
+        
         <select name="estado">
             <option disabled selected>Selecione um Estado</option>
-            <option>São Paulo</option>
-            <option>Minas Gerais</option>
-            <option>Curitiba</option>
-            <option>Bahia</option>
+            <option value="SP">São Paulo</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="CWB">Curitiba</option>
+            <option value="BA">Bahia</option>
         </select> 
         <br>
-        Conclusão: <br>
-        <textarea placeholder="Digite seu texto"></textarea>
+
+        Conclusão: 
         <br>
+        <textarea cols="30" rows="3" placeholder="Digite seu texto"></textarea>
+        <br>
+
         Aceito os termos de uso:
-        <input type="checkbox"> <br>
-        <button>Enviar</button>
+        <input type="checkbox"> 
+        <br>
+        <button type="button">Não faz nada</button>
+        <button type="reset">Limpar</button>
+        <button type="submit">Enviar</button>
+        <br>
+        <input type="button" value="Não faz nada">
+        <input type="reset" value="Limpar">
+        <input type="submit" value="Enviar">
     </form>
 </body>
 </html>
